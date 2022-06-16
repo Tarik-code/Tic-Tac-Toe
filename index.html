@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1 class="title">Tic-Tac-Toe</h1>
+    </header>
+    <section class="announceWinner">
+        <h1 id="announceWinner"></h1>
+    </section>
+    <section id="playerNames">
+        <h1 id="playerOneName"></h1>
+        <h1 id="vs"> Vs</h1>
+        <h1 id="playerTwoName"></h1>
+    </section>
+    <section class="restartGame">
+        <button id="restartBtn" onClick="window.location.reload();">Restart</button>
+    </section>
+    <section class="playersForm">
+        <form action="#" id="form">
+            <div class="players">
+                <div class="playerOne">
+                    <label for="playerOne">Player One</label>
+                    <input type="text" id="playerOne" value="Player One" required>
+                </div>
+                <div class="playerTwo">
+                    <label for="playerTwo">Player Two</label>
+                    <input type="text" id="playerTwo" value="Player Two" required>
+                </div>
+            </div>
+            <div class="buttonStart">
+                <button type="submit" id="submit">Start</button>
+            </div>
+        </form>
+    </section>
+    <section id="gameBoard">
+        <div class="box" id="boxSide"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="boxSide"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+        <div class="box" id="boxCorner"></div>
+        <div class="box" id="boxBottom"></div>
+        <div class="box" id="boxBottom"></div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

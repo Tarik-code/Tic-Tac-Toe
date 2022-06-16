@@ -1,0 +1,163 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+
+/* Header */
+.title {
+    color: black;
+    background-color: rgba(212, 212, 212, 0.103);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 2vw;
+    height: 8vh;
+    width: 50%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 5vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+
+/* Players announcement */
+#playerNames {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    font-size: 1.5vw;
+}
+
+#vs {
+    display: none;
+}
+
+
+
+/* Announce Winner */
+#announceWinner {
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+    margin: 5vh;
+}
+
+
+
+/* Game Board */
+#gameBoard {
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.box {
+    height: 15vh;
+    width: 15vw;
+    /* box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px; */
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+    color: #7B7B7B;
+    border-left: solid 10px #999999;;
+    border-bottom: solid 10px #999999;
+}
+
+
+
+/* Box edges border */
+#boxSide {
+    border-left: none;
+}
+
+#boxCorner {
+    border-bottom: none;
+    border-left: none;
+}
+
+#boxBottom {
+    border-bottom: none;
+}
+
+
+
+/* Player Selection Form*/
+.playersForm {
+    display: flex;
+    gap: 5vw;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+}
+
+.players {
+    display: flex;
+    gap: 55px;
+}
+
+form {
+    gap: 25px;
+    visibility: show;
+}
+
+form input {
+    width: 10vw;
+    font-size: 1.5vw;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+form label {
+    font-size: 1.5vw;
+    margin-right: 20px;
+}
+
+
+
+/* Buttons */
+.buttonStart {
+    display: flex;
+    justify-content: center;
+    margin: 35px;
+}
+
+#submit {
+    height: 5vh;
+    width: 6vw;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(165, 165, 165);
+    color: #fff;
+    font-size: 2vw;
+    margin: auto;
+}
+
+.restartGame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#restartBtn {
+    display: none;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(165, 165, 165);
+    color: #fff;
+    font-size: 2vw;
+    margin: auto;
+}
